@@ -1,0 +1,81 @@
+body{
+    background-color: black;
+    background-size: contain;
+}
+
+footer{
+    color: white;
+    bottom: 0%;
+    margin-left: 90vh;
+    position: fixed;
+
+}
+h1{
+    color: white;
+}
+.sticky {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 2%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    border: 1px solid grey;
+  }
+  @media only screen and (max-width: 300px) {
+    .prev, .next {font-size: 11px}
+  }
+#title{
+  margin-top: 10vh;
+  margin-left: 2vh;
+  font-size: 4vh;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: 0px solid;
+}
+#date-time{
+  margin-left: 2.2vh;
+  margin-top: 1vh;
+  font-size: 1.7vh;
+  background-color: black;
+  color: grey;
+  outline: none;
+  border: 0px solid;
+}
+textarea{
+   margin-left: 2.5vh;
+  font-size: 3vh;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: 0px solid;
+  resize: none;
+  
+}
+i{
+  border: none;
+  padding: 15px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+body{
+    background-color: #000000;
+}
+* {
+    box-sizing: border-box;
+  }
+  .column1 {
+    background-color: #000000;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 755px;
+    
+}
+.column2 {
+    background-color: #000000;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 755px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 600px) {
+    .column1{
+      width: auto;
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .column2{
+      width: auto;
+      height: auto;
+      padding-left: 10vh;
+    }
+  }
+@media screen and (max-width: 600px) {
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  img{
+      height: auto;
+      width: 100%;
+      margin-top: 10%;
+      margin-left: 6%;
+  }
+  button{
+    border-radius: 2em;
+    height: 8vh;
+    width: 52vh;
+}
+p.notes{
+    color: white;
+    font-size: 40px;
+    text-align: left;
+    margin-top: 22%;
+    font-family: 'PT Sans', sans-serif;
+}
+p.notes2{
+  color: white;
+  font-size: 40px;
+  text-align: left;
+  margin-top: -6%;
+  font-family: 'PT Sans', sans-serif;
+}
+input#email_field{
+    height: 40px;
+    width: 34vh;
+    border-radius: 0.7em;
+    background-color: black;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid grey;
+    padding-left: 10px;
+}
+input#password_field{
+    height: 40px;
+    width: 34vh;
+    border-radius: 0.7em;
+    background-color: black;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid grey;
+    padding-left: 10px;  
+}
+#signin{
+    height: 40px;
+    width: 34vh;
+    font-family: 'PT Sans', sans-serif;
+    border-radius: 1em;
+    font-size: 20px;
+
+}
+
+footer{
+      color: white;
+      text-align: center;
+  }

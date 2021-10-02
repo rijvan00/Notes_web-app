@@ -1,0 +1,230 @@
+body {
+  background-color: black;
+  padding: 0%;
+  margin: 0%;
+}
+* {
+  box-sizing: border-box;
+}
+.nav {
+  background-color: black;
+  padding: 1vh;
+}
+.nav-item {
+  color: white;
+  font-size: 4vh;
+  margin-top: 2vh;
+  margin-left: 6vh;
+  align-items: center;
+  display: inline;
+}
+
+button#back {
+  float: right;
+  background-color: black;
+  border: 4px solid black;
+}
+
+#logout {
+  margin-top: 2px;
+  cursor: pointer;
+}
+.btn {
+  background-color: rgba(43, 7, 7, -01);
+  border: none;
+  color: white;
+  padding: 8px 8px;
+  font-size: 16px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+}
+.sticky {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+img {
+  width: 5vh;
+  height: 7vh;
+  margin-top: -3vh;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+ul h2 {
+  width: 14rem;
+  margin-top: -15px;
+  height: 2.5rem;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+ul p {
+  height: 10rem;
+  font-size: 20px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+ul span {
+  height: 22px;
+  width: 10rem;
+  margin-left: 2rem;
+  margin-top: -3rem;
+
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+li {
+  height: 33vh;
+  width: 33vh;
+  padding: 20px;
+  background: #ffc58a;
+  font-size: 20px;
+  color: #555;
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+  border-radius: 15px;
+}
+
+li:nth-child(5n + 1) {
+  padding: 20px;
+  background: #ffc58a;
+}
+li:nth-child(5n + 2) {
+  background: #6bc58a;
+}
+li:nth-child(5n + 3) {
+  background: #ff7780;
+}
+li:nth-child(5n + 4) {
+  background: #abf7ff;
+}
+li:nth-child(5n + 5) {
+  background: #ff9feb;
+}
+
+li span {
+  display: block;
+}
+
+li span:nth-child(2) {
+  font-size: 16px;
+  margin-top: 6px;
+  color: #999;
+}
+
+.column {
+  float: left;
+  padding-left: 45px;
+  margin-top: 50px;
+  width: 25%;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 812px) {
+  /* For mobile phones: */
+  * {
+    box-sizing: border-box;
+  }
+  button#back {
+    float: right;
+    background-color: black;
+  }
+.btn{
+  position: fixed;
+}
+  #logout {
+    margin-top: -0.5rem;
+    cursor: pointer;
+  }
+  .nav-item {
+    font-size: 44px;
+    margin-left: 2rem;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+  ul span{
+    margin-top: -15px;
+    margin-left: 2.7rem;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+
+
+  button#back {
+    float: right;
+    background-color: black;
+  }
+.btn{
+  position: fixed;
+}
+  #logout {
+    margin-top: -0.5rem;
+    cursor: pointer;
+  }
+  .nav-item {
+    font-size: 5rem;
+    margin-left: 2rem;
+  }
+  i{
+    font-size: 64px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+   
+  }
+  ul span{
+    margin-top: -15px;
+    margin-left: 4rem;
+    font-size: 40px;
+    height: 48px;
+    width: 20rem;
+   
+  }
+  ul h2 {
+    width: 25rem;
+    margin-top:8px;
+    font-size: 48px;
+    height: 3rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  ul p {
+    height: 16rem;
+    font-size: 36px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+
+}
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Saved Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="save.css">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class=" nav-item"> Notes
+            <button type="button" id="back"><img src="goback.jpg" alt="logout" id="logout">
+            </button>
+        </div>
+
+    </nav>
+
+    <div class="row">
+        <div class="column"><br>
+
+            <ul id="saved">
+               
+            </ul>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <button id="add" class="btn" onclick=window.location.href="notes.html"><i class="fa fa-plus-circle"
+            style="font-size:64px;color:white">
+    </button></i>
+
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+<script src="Saved.js"></script>
+
+</html>

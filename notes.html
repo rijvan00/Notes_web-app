@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="notes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <a class="next" id="addBtn">&#10004;</a>
+    <label for="title"></label>
+    <input type="text" id="title" placeholder="Title"><br><br><br>
+    <textarea name="notes" id="addTxt" cols="118" rows="16" placeholder="Start Your Notes From Here-->>>"></textarea>
+
+    <i class="fa fa-trash-o" onclick="deletenote();" style="font-size:48px;color:white"></i>
+
+    <footer class="foot">MARK42</footer>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+    <script src="notes.js"></script>
+
+</body>
+
+</html>
