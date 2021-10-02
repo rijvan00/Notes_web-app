@@ -135,7 +135,7 @@ function updatenote() {
   const obj = {
     title: title,
     data: data,
-    date: firebase.firestore.timestamp
+    date: new Date()
   }
   db.collection("user").doc(uid).collection("notes").doc(docID).set(obj).then((docRef) => {
     window.location.replace("save.html");
