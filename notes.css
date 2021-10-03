@@ -3,13 +3,7 @@ body{
     background-size: contain;
 }
 
-footer{
-    color: white;
-    bottom: 0%;
-    margin-left: 90vh;
-    position: fixed;
 
-}
 h1{
     color: white;
 }
@@ -26,7 +20,7 @@ h1{
     padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 48px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -51,15 +45,7 @@ h1{
   outline: none;
   border: 0px solid;
 }
-#date-time{
-  margin-left: 2.2vh;
-  margin-top: 1vh;
-  font-size: 1.7vh;
-  background-color: black;
-  color: grey;
-  outline: none;
-  border: 0px solid;
-}
+
 textarea{
    margin-left: 2.5vh;
   font-size: 3vh;
@@ -78,4 +64,64 @@ i{
   position: fixed;
   bottom: 0%;
   right: 0%;
+}
+footer{
+  color: white;
+  bottom: 0%;
+  margin-left: 90vh;
+  position: fixed;
+
+}
+@media only screen and (max-width:812px) {
+
+  #title{
+    margin-top: 10vh;
+    margin-left: 0;
+    font-size: 4vh;
+    color: white;
+    outline: none;
+    border: 0px solid;
+    height: 2.5rem;
+    width: 43vh;
+ }
+ textarea{
+  
+ font-size: 3vh;
+ padding: 5px;
+ color: white;
+ outline: none;
+ border: 0px solid;
+ resize: none;
+ width: 95vw;
+ margin-left: 0rem;
+}
+}
+
+@media only screen and (min-width:1000px) and (max-width:1400px) {
+ 
+  
+  #title{
+    margin-top: 10vh;
+    margin-left: 0;
+    font-size: 4vh;
+    color: white;
+    outline: none;
+    border: 0px solid;
+    height: 5rem;
+    width: 71.8vh;
+ }
+ textarea{
+  
+ font-size: 3vh;
+ padding: 5px;
+ color: white;
+ outline: none;
+ border: 0px solid;
+ resize: none;
+ width: 95vw;
+ margin-left: 0rem;
+ height: 70vh;
+
+}
+
 }
