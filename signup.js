@@ -9,8 +9,8 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-const db= firebase.firestore();
-db.settings({timestampsInSnapshots: true});
+const db = firebase.firestore();
+db.settings({ timestampsInSnapshots: true });
 
 
 
@@ -21,28 +21,56 @@ function signUp() {
   var password = document.getElementById("password_field").value;
 
   firebase.auth().createUserWithEmailAndPassword(email, password)
-  .then((userCredential) => {
-    window.location.replace("save.html");
+    .then((userCredential) => {
+      add_data();
+      
+      
 
-    var user = userCredential.user;
-    // ...
-  })
-  .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    alert("Error:" + errorMessage)
-    // ..
-  });
+
+    })
+    .catch((error) => {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      alert("Error:" + errorMessage)
+      // ..
+    });
 }
 
 firebase.auth().onAuthStateChanged((user) => {
 
   if (user) {
+    uid = user.uid;
 
-    window.location.replace("save.html");
-    var uid = user.uid;
-    // ...
+    // ...     
+
   } else {
-  
+
   }
 });
+
+
+
+function add_data(uid) {
+
+  const usernamefield = document.getElementById("username_field");
+  const emailfield = document.getElementById("email_field");
+  const PhoneNumberfield = document.getElementById("Number_field");
+
+  const username = usernamefield.value;
+  const email = emailfield.value;
+  const Phone = PhoneNumberfield.value;
+  
+  const data = {
+    username: username,
+    email: email,
+    Phone: Phone
+  }
+  db.collection("user").doc(uid).set(data).then(() => {
+      console.log("Document successfully written!");
+      window.location.replace("save.html");
+    })
+    
+    .catch((error) => {
+      console.error("Error writing document: ", error);
+    });
+}
