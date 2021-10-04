@@ -59,7 +59,7 @@ function parseURLParams(url) {
 }
 
 
-const saveNote = () => {
+function saveNote(){
   const title = titleField.value;
   const data = dataField.value;
 

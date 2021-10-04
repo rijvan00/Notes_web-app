@@ -138,6 +138,10 @@ li span:nth-child(2) {
   clear: both;
 }
 
+.fa-plus-circle{
+  margin: 10px;
+}
+
 @media only screen and (min-width: 280px) and (max-width: 812px) {
   /* For mobile phones: */
   * {

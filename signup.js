@@ -22,10 +22,10 @@ function signUp() {
 
   firebase.auth().createUserWithEmailAndPassword(email, password)
     .then((userCredential) => {
-      add_data();
       
       
-
+      
+      
 
     })
     .catch((error) => {
@@ -40,7 +40,8 @@ firebase.auth().onAuthStateChanged((user) => {
 
   if (user) {
     uid = user.uid;
-
+    
+    add_data(uid);
     // ...     
 
   } else {
@@ -59,13 +60,13 @@ function add_data(uid) {
   const username = usernamefield.value;
   const email = emailfield.value;
   const Phone = PhoneNumberfield.value;
-  
+   
   const data = {
     username: username,
     email: email,
     Phone: Phone
   }
-  db.collection("user").doc(uid).set(data).then(() => {
+  db.collection("user").doc(uid).set(data).then((docref) => {
       console.log("Document successfully written!");
       window.location.replace("save.html");
     })
