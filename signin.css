@@ -1,253 +1,267 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-body{
-    background-color: #000000;
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+body {
+  background-color: #000000;
 }
 
 * {
-    box-sizing: border-box;
-  }
-  .column1 {
-    background-color: #000000;
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: auto;
-    
+  box-sizing: border-box;
+}
+.column1 {
+  background-color: #000000;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 755px;
 }
 .column2 {
-    background-color: #000000;
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: auto;
+  background-color: #000000;
+  float: left;
+  width: 50%;
+  padding-left: 5rem;
+  height: 755px;
+  margin-top: -1.5rem;
 }
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  @media screen and (max-width: 600px) {
-    .column1{
-      width: auto;
-      height: auto;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .column2{
-      width: auto;
-      height: auto;
-      padding-left: 10vh;
-    }
-  }
+  content: "";
+  display: table;
+  clear: both;
+}
 @media screen and (max-width: 600px) {
-    img {
-      width: auto;
-      height: auto;
-    }
+  .column1 {
+    width: auto;
+    height: auto;
   }
-
-  img{
-      height: auto;
-      width: 100%;
-      margin-top: 10%;
-      margin-left: 6%;
+}
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: auto;
+    height: auto;
+    padding-left: 10vh;
   }
-  button{
-    border-radius: 2em;
-    height: 8vh;
-    width: 52vh;
 }
-p.notes{
-    color: white;
-    font-size: 40px;
-    text-align: left;
-    margin-top: 22%;
-    font-family: 'PT Sans', sans-serif;
-}
-p.notes2{
-  color: white;
-  font-size: 40px;
-  text-align: left;
-  margin-top: -6%;
-  font-family: 'PT Sans', sans-serif;
-}
-input#email_field{
-    height: 40px;
-    width: 34vh;
-    border-radius: 0.7em;
-    background-color: black;
-    color: white;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 18px;
-    outline: none;
-    border: 1px solid grey;
-    padding-left: 10px;
-}
-input#password_field{
-    height: 40px;
-    width: 34vh;
-    border-radius: 0.7em;
-    background-color: black;
-    font-family: 'PT Sans', sans-serif;
-    color: white;
-    font-size: 18px;
-    outline: none;
-    border: 1px solid grey;
-    padding-left: 10px;  
-}
-#signin{
-    height: 40px;
-    width: 34vh;
-    font-family: 'PT Sans', sans-serif;
-    border-radius: 1em;
-    font-size: 20px;
-
-}
-
-footer{
-      color: white;
-      text-align: center;
+@media screen and (max-width: 600px) {
+  img {
+    width: auto;
+    height: auto;
   }
-  @media only screen and (max-width:812px) {
-   
-    body {
-      margin: 0%;
-      padding: 0%;
- 
-    };
-    .column1 , .column2{
-      width: 100vw;
-    }
-    img {
-      height: 100%;
-      width: 120%;
-      margin-top: -2%;
-      margin-left: .5rem;
-    }
-    p.notes {
-      color: white;
-      font-size: 48px;
-      height: 4rem;
-      width: 22rem;
-      margin-top: -20%;
-      margin-left: -5%;
-      font-family: "PT Sans", sans-serif;
-      
-    }
-    p.notes2 {
-      color: white;
-      width: 21rem;
-      font-size: 36px;
-      margin-top: -8%;
-      margin-left: 7%;
-      font-family: "PT Sans", sans-serif;
-    }
-  
-  
-  input#password_field ,input#email_field{
-      height: 40px;
-      width: 35vh;
-      border-radius: 0.7em;
-      background-color: black;
-      font-family: 'PT Sans', sans-serif;
-      color: white;
-      font-size: 18px;
-      outline: none;
-      border: 1px solid grey;
-      padding-left: 10px;  
-
-  }
-  #signin{
-      height: 40px;
-      width: 35vh;
-      font-family: 'PT Sans', sans-serif;
-      border-radius: 1em;
-      font-size: 20px;
-      
-      margin-top: -2rem;
-
-  }
-  
-  footer{
-        color: white;
-margin-top: 15rem;    
-margin-left: 5rem; 
-font-size: 24px;
-   }
 }
 
-@media only screen and (min-width:1000px)   and (max-width:1400px){  
-
-
-body {
-  margin: 0%;
-  padding: 0%;
-
-};
-.row{
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-}
-.column1 , .column2{
-  width: 100vw;
-}
 img {
-  height: 60vh;
-  width: 98vw;
-  margin-top: -2%;
-  margin-left: .5rem;
+  height: auto;
+  width: 90%;
+  margin-top: 12%;
+  margin-left: 20%;
 }
+
 p.notes {
   color: white;
-  font-size: 64px;
-  height: 5rem;
-  width: 45rem;
-  margin-top: -10%;
-  margin-left: 27%;
+  font-size: 48px;
+  text-align: left;
+  margin-top: 22%;
   font-family: "PT Sans", sans-serif;
-  
-  
+  padding-top: 50px;
 }
 p.notes2 {
   color: white;
-  width: 21rem;
-  font-size: 48px;
-  margin-top: -3%;
-  margin-left: 32%;
+  font-size: 36px;
+  text-align: left;
+  margin-top: -40px;
   font-family: "PT Sans", sans-serif;
-  
 }
 
-
-input#password_field ,input#email_field{
-  height: 4.5rem;
-  width: 35vh;
-  border-radius: 0.7em;
+input#password_field {
+  height: 3rem;
+  width: 45vh;
+  border-radius: 15px;
   background-color: black;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: white;
   font-size: 24px;
   outline: none;
   border: 1px solid grey;
   padding-left: 10px;
-  margin-left: 15rem;  
-
-}
-#signin{
-  height: 4.5rem;
-  width: 35vh;
-  font-family: 'PT Sans', sans-serif;
-  border-radius: 1em;
-  font-size: 36px;
-  margin-left: 15rem;
-  margin-top: 1rem;
-
+  margin-top: 10px;
 }
 
-footer{
+input#email_field {
+  height: 3rem;
+  width: 45vh;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  outline: none;
+  border: 1px solid grey;
+  padding-left: 10px;
+}
+
+#signin {
+  height: 3rem;
+  width: 45vh;
+  font-family: "PT Sans", sans-serif;
+  border-radius: 15px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  margin-top: 3.5rem;
+}
+@media only screen and (max-width: 812px) {
+  body {
+    margin: 0%;
+    padding: 0%;
+  }
+  .column2 {
+    width: 100vw;
+    padding-left: 5rem;
+  }
+
+  .column1 {
+    display: none;
+  }
+  p.notes {
     color: white;
-margin-top: 3rem;    
-margin-left: -3rem; 
-font-size: 24px;
+    font-size: 36px;
+    height: 4rem;
+    width: 17rem;
+    margin-left: -3rem;
+    font-family: "PT Sans", sans-serif;
+    padding-left: 5px;
+  }
+  p.notes2 {
+    color: white;
+    width: 21rem;
+    font-size: 24px;
+    margin-top: -2rem;
+    margin-left: -2.5rem;
+    font-family: "PT Sans", sans-serif;
+    margin-top: 50px;
+  }
+  label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+
+  input#email_field {
+    height: 3rem;
+    width: 35vh;
+    border-radius: 15px;
+    background-color: black;
+    font-family: "PT Sans", sans-serif;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid grey;
+    padding-left: 10px;
+    margin-left: -2rem;
+    margin-top: 5rem;
+  }
+  input#password_field {
+    height: 3rem;
+    width: 35vh;
+    border-radius: 15px;
+    background-color: black;
+    font-family: "PT Sans", sans-serif;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid grey;
+    padding-left: 10px;
+    margin-left: -2rem;
+  }
+
+  #signin {
+    height: 3rem;
+    width: 35vh;
+    font-family: "PT Sans", sans-serif;
+    border-radius: 15px;
+    font-size: 16px;
+    margin-left: -2rem;
+    margin-top: 5rem;
+  }
+
+  footer {
+    color: white;
+    margin-top: 5.8rem;
+    margin-left: 1.5rem;
+    font-size: 16px;
+  }
 }
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  body {
+    margin: 0%;
+    padding: 0%;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .column1,
+  .column2 {
+    width: 100vw;
+  }
+  img {
+    height: 60vh;
+    width: 98vw;
+    margin-top: -2%;
+    margin-left: 0.5rem;
+  }
+  p.notes {
+    color: white;
+    font-size: 64px;
+    height: 5rem;
+    width: 45rem;
+    margin-top: -10%;
+    margin-left: 27%;
+    font-family: "PT Sans", sans-serif;
+  }
+  p.notes2 {
+    color: white;
+    width: 21rem;
+    font-size: 48px;
+    margin-top: -3%;
+    margin-left: 32%;
+    font-family: "PT Sans", sans-serif;
+  }
+
+  input#password_field,
+  input#email_field {
+    height: 4.5rem;
+    width: 35vh;
+    border-radius: 0.7em;
+    background-color: black;
+    font-family: "PT Sans", sans-serif;
+    color: white;
+    font-size: 24px;
+    outline: none;
+    border: 1px solid grey;
+    padding-left: 10px;
+    margin-left: 15rem;
+  }
+  #signin {
+    height: 4.5rem;
+    width: 35vh;
+    font-family: "PT Sans", sans-serif;
+    border-radius: 1em;
+    font-size: 36px;
+    margin-left: 15rem;
+    margin-top: 1rem;
+  }
+
+  footer {
+    color: white;
+    margin-top: 3rem;
+    margin-left: -3rem;
+    font-size: 24px;
+  }
 }

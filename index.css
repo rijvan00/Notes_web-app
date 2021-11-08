@@ -11,14 +11,13 @@ body {
   background-color: #000000;
   float: left;
   width: 50%;
-
   height: auto;
 }
 .column2 {
   background-color: #000000;
   float: left;
   width: 50%;
-  padding: 10px;
+  padding-left: 7rem;
   height: 755px;
 }
 .row:after {
@@ -53,7 +52,7 @@ a {
 }
 .signin_button,
 .signup_button {
-  border-radius: 2em;
+  border-radius: 15px;
   height: 8vh;
   width: 52vh;
   font-size: 4vh;
@@ -81,47 +80,51 @@ footer {
   }
   .column1 {
     background-color: #000000;
-    width: 50%;
-    height: auto;
+    width: 80vw;
+    height: 60vh;
+    
   }
   .column2 {
     background-color: #000000;
     float: left;
     width: 50%;
     height: auto;
+    padding-left: 7rem;
   }
 
   img {
     height: 100%;
     width: 170%;
     margin-top: 10%;
-    margin-left: 15%;
+    margin-left: 0%;
   }
   p.notes {
     color: white;
     font-size: 64px;
-    height: 3rem;
+    height: 8rem;
     width: 20rem;
-    margin-top: -15%;
-    margin-left: 15%;
+    margin-top: -5%;
     font-family: "PT Sans", sans-serif;
+    
+    
   }
   p.notes2 {
     color: white;
-    height: 10rem;
+    height: 7rem;
     width: 21rem;
     font-size: 30px;
     text-align: left;
-    margin-top: -8%;
-    margin-left: 8%;
+    margin-top: 50px;
+ 
     font-family: "PT Sans", sans-serif;
+    
   }
   .signin_button,
 .signup_button {
-  border-radius: 2em;
-  height: 8vh;
-  width: 40vh;
-  font-size: 32px;
+  border-radius: 15px;
+  height: 6vh;
+  width: 35vh;
+  font-size: 24px;
 }
 footer {
   color: white;
@@ -163,7 +166,7 @@ footer {
     height: 7rem;
     width: 53rem;
     margin-top: -12%;
-    margin-left: 62%;
+    margin-left: 35%;
     font-family: "PT Sans", sans-serif;
   }
   p.notes2 {
@@ -173,12 +176,12 @@ footer {
     font-size: 48px;
     text-align: left;
     margin-top: -15%;
-    margin-left: 46%;
+    margin-left: 35%;
     font-family: "PT Sans", sans-serif;
   }
   .signin_button,
 .signup_button {
-  border-radius: 2em;
+  border-radius: 15px;
   height: 8vh;
   width: 40vh;
   font-size: 32px;
@@ -188,7 +191,7 @@ footer {
   color: white;
   margin-left: 35%;
   font-size: 36px;
-  margin-bottom: 13rem;
+  margin-bottom: 5rem;
 }
   
 

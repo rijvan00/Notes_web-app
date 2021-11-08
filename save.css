@@ -55,7 +55,8 @@ ul {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 40px;
+  gap: 50px;
+  
 }
 ul h2 {
   width: 14rem;
@@ -63,6 +64,7 @@ ul h2 {
   height: 2.5rem;
   overflow-y: hidden;
   overflow-x: hidden;
+  text-align: center;
 }
 ul p {
   height: 10rem;
@@ -73,16 +75,14 @@ ul p {
 ul span {
   height: 22px;
   width: 10rem;
-  margin-left: 2rem;
-  margin-top: -3rem;
-
+  margin-left: 2.7rem;
   overflow-y: hidden;
   overflow-x: hidden;
 }
 
 li {
-  height: 33vh;
-  width: 33vh;
+  height: 17.5rem;
+  width: 17.5rem;
   padding: 20px;
   background: #ffc58a;
   font-size: 20px;
@@ -168,11 +168,11 @@ li span:nth-child(2) {
     padding: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 40px;
+    margin-left: -10px;
   }
   ul span{
-    margin-top: -15px;
-    margin-left: 2.7rem;
+    
+    margin-left: 4rem;
   }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
